@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background: url('pawn2.jpg') repeat;
+  background-size: 180px;
+  opacity: 0.99;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #8b5a2b;
+  color: white;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-item {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-toggle {
+  margin-left: auto;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 20px;
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  background: #8b5a2b;
+  flex-direction: column;
+}
+
+.mobile-menu.show { display: flex; }
+
+.mobile-item {
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hide-mobile { display: none; }
+  .nav-toggle { display: block; }
+}
+
+/* LAYOUT */
+.layout { margin-top: 1px; }
+
+/* SLIDESHOW */
+.slideshow { position: relative; }
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide img { width: 100%; }
+
+.slide-caption {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.center { text-align: center; }
+.dark { background: #000; color: #fff; }
+
+.title {
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+/* MENU LIST */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #333;
+}
+
+.menu-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item:last-child { border-bottom: none; }
+
+/* CAT GRID */
+.cat-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cat-card {
+  position: relative;
+  text-align: center;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #c4c0b1;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+/* CAT IMAGE */
+.cat-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.cat-img:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form textarea { height: 120px; }
+
+.btn {
+  padding: 12px;
+  background: #8b5a2b;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+  background: #8b5a2b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
